@@ -1,0 +1,27 @@
+{
+  "name": "mock_data_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shalinv/Mock_Data_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shalinv/Mock_Data_Generator/issues"
+  },
+  "homepage": "https://github.com/shalinv/Mock_Data_Generator#readme",
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@tailwindcss/cli": "^4.1.17",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "tailwindcss": "^4.1.17"
+  }
+}

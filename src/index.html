@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mock Data Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
+  </head>
+  <body class="bg-blue-950">
+    <h1 class="text-center text-white text-6xl mt-9 font-bold">
+      Mock Data Generator
+    </h1>
+    <h2 class="text-center text-white text-xl m-2">
+      Create Mock data for your projects here with just few clicks
+    </h2>
+    <h2 class="text-gray-300 text-xl m-5">Define your structure:</h2>
+    <button id="add" class="bg-blue-400 rounded-sm p-2 mx-5">
+      Add New Entry
+    </button>
+    <button id="generate" class="bg-green-500 rounded-sm p-2 mx-5">
+      Generate
+    </button>
+    <div id="entry">
+      <form class="flex flex-wrap m-3">
+        <div class="mx-3">
+          <label class="text-white" for="fname">Field Name:</label><br />
+          <input
+            class="bg-white rounded-sm p-0.5"
+            type="text"
+            id="fname"
+            name="fname"
+          />
+        </div>
+        <div class="mx-3">
+          <label class="text-white" for="fname">Data Type:</label><br />
+          <select class="bg-white rounded-sm p-1" id="type" name="datatype">
+            <option value="string">string</option>
+            <option value="integer">integer</option>
+            <option value="float">float</option>
+            <option value="boolean">boolean</option>
+            <option value="name">name</option>
+            <option value="email">email</option>
+            <option value="phone">phone</option>
+            <option value="date">date</option>
+            <option value="image_url">image_url</option>
+            <option value="file_url">file_url</option>
+            <option value="object">object</option>
+            <option value="array">array</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
