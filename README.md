@@ -15,8 +15,8 @@ A simple web application that dynamically generates random data based on user-de
 - Built with **Vanilla JS**, **Axios**, **Express**, and **Faker.js**.  
 - Styled with **Tailwind CSS** for a clean UI.
 
-## Demo
-
+## Screenshot
+![Demo Screenshot](image/screenshot1.png)
 
 ## Installation
 
