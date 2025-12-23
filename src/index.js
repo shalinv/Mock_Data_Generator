@@ -52,6 +52,7 @@ container.addEventListener("click", (e) => {
 generate.addEventListener("click", async () => {
   const forms = container.querySelectorAll("form");
   const data = [];
+  let hasError = false;
 
   forms.forEach((form) => {
     const fieldName = form.querySelector('input[name="fname"]').value;
@@ -59,14 +60,20 @@ generate.addEventListener("click", async () => {
 
     if (fieldName.trim() !== "") {
       data.push({ field: fieldName, type: dataType });
+    } else {
+      hasError = true;
     }
   });
+
+  if (hasError) {
+    alert("All input fileds are mandatory");
+    return;
+  }
 
   try {
     const response = await axios.post("/generate", data).then((response) => {
       console.log(response);
       const newDiv = document.createElement("div");
-
       newDiv.classList.add(
         "bg-black",
         "text-white",
